@@ -1,0 +1,823 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="scala-fun"
+		module="scala-fun_2.11"
+		revision="1.0"
+		conf="compile"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20170213162843"/>
+	<dependencies>
+		<module organisation="org.scala-lang" name="scala-compiler">
+			<revision name="2.11.6" status="release" pubdate="20150226090100" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="36">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="3133" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.scala-lang/scala-compiler/ivy-2.11.6.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/scala-lang/scala-compiler/2.11.6/scala-compiler-2.11.6.pom"/>
+				<caller organisation="org.scala-lang" name="scalap" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.2" callerrev="2.11.2"/>
+				<caller organisation="org.scala-lang.modules" name="scala-pickling_2.11" conf="default, compile, runtime, master" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.4" callerrev="0.10.0"/>
+				<artifacts>
+					<artifact name="scala-compiler" type="jar" ext="jar" status="no" details="" size="14237296" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.scala-lang/scala-compiler/jars/scala-compiler-2.11.6.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/scala-lang/scala-compiler/2.11.6/scala-compiler-2.11.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-parser-combinators_2.11">
+			<revision name="1.0.3" status="release" pubdate="20141215082100" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="38">
+				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="2803" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/ivy-1.0.3.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.3/scala-parser-combinators_2.11-1.0.3.pom"/>
+				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="1.0.3" rev-constraint-default="1.0.3" rev-constraint-dynamic="1.0.3" callerrev="2.11.6"/>
+				<caller organisation="org.scala-lang.modules" name="scala-pickling_2.11" conf="default, compile, runtime, master" rev="1.0.2" rev-constraint-default="1.0.2" rev-constraint-dynamic="1.0.2" callerrev="0.10.0"/>
+				<artifacts>
+					<artifact name="scala-parser-combinators_2.11" type="bundle" ext="jar" status="no" details="" size="415523" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.3.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.3/scala-parser-combinators_2.11-1.0.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.0.2" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.0.3"/>
+				<caller organisation="org.scala-lang.modules" name="scala-pickling_2.11" conf="default, compile, runtime, master" rev="1.0.2" rev-constraint-default="1.0.2" rev-constraint-dynamic="1.0.2" callerrev="0.10.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.appadhoc" name="adhoc-auth_2.11">
+			<revision name="1.0" status="integration" pubdate="20161130160525" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="3">
+				<metadata-artifact status="no" details="" size="3710" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/com.appadhoc/adhoc-auth_2.11/ivy-1.0.xml" searched="false" origin-is-local="true" origin-location="/Users/zhouzhiqiang/.ivy2/local/com.appadhoc/adhoc-auth_2.11/1.0/ivys/ivy.xml"/>
+				<caller organisation="scala-fun" name="scala-fun_2.11" conf="compile" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="adhoc-auth_2.11" type="jar" ext="jar" status="no" details="" size="593569" time="0" location="/Users/zhouzhiqiang/.ivy2/local/com.appadhoc/adhoc-auth_2.11/1.0/jars/adhoc-auth_2.11.jar">
+						<origin-location is-local="true" location="/Users/zhouzhiqiang/.ivy2/local/com.appadhoc/adhoc-auth_2.11/1.0/jars/adhoc-auth_2.11.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-codec" name="commons-codec">
+			<revision name="1.8" status="release" pubdate="20150329153422" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-codec/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="48">
+				<metadata-artifact status="no" details="" size="9087" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/commons-codec/commons-codec/ivy-1.8.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/commons-codec/commons-codec/1.8/commons-codec-1.8.pom"/>
+				<caller organisation="com.appadhoc" name="adhoc-auth_2.11" conf="compile" rev="1.8" rev-constraint-default="1.8" rev-constraint-dynamic="1.8" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="commons-codec" type="jar" ext="jar" status="no" details="" size="263865" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.8.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/commons-codec/commons-codec/1.8/commons-codec-1.8.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.json" name="json">
+			<revision name="20090211" status="release" pubdate="20090227023142" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.json.org/java/index.html" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="47">
+				<license name="provided without support or warranty" url="http://www.json.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2908" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.json/json/ivy-20090211.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/json/json/20090211/json-20090211.pom"/>
+				<caller organisation="com.appadhoc" name="adhoc-auth_2.11" conf="compile" rev="20090211" rev-constraint-default="20090211" rev-constraint-dynamic="20090211" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="json" type="jar" ext="jar" status="no" details="" size="45944" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.json/json/jars/json-20090211.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/json/json/20090211/json-20090211.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-pickling_2.11">
+			<revision name="0.10.0" status="release" pubdate="20150207035700" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/scala/pickling" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="46">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html "/>
+				<metadata-artifact status="no" details="" size="3267" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.scala-lang.modules/scala-pickling_2.11/ivy-0.10.0.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/scala-lang/modules/scala-pickling_2.11/0.10.0/scala-pickling_2.11-0.10.0.pom"/>
+				<caller organisation="com.appadhoc" name="adhoc-auth_2.11" conf="compile" rev="0.10.0" rev-constraint-default="0.10.0" rev-constraint-dynamic="0.10.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="scala-pickling_2.11" type="jar" ext="jar" status="no" details="" size="822369" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.scala-lang.modules/scala-pickling_2.11/jars/scala-pickling_2.11-0.10.0.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/scala-lang/modules/scala-pickling_2.11/0.10.0/scala-pickling_2.11-0.10.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.mongodb" name="casbah_2.11">
+			<revision name="3.1.1" status="release" pubdate="20160302034101" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/mongodb/casbah" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="40">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="3036" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.mongodb/casbah_2.11/ivy-3.1.1.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/mongodb/casbah_2.11/3.1.1/casbah_2.11-3.1.1.pom"/>
+				<caller organisation="com.appadhoc" name="adhoc-auth_2.11" conf="compile" rev="3.1.1" rev-constraint-default="3.1.1" rev-constraint-dynamic="3.1.1" callerrev="1.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.mongodb" name="casbah-gridfs_2.11">
+			<revision name="3.1.1" status="release" pubdate="20160302034113" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/mongodb/casbah" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="45">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="2807" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.mongodb/casbah-gridfs_2.11/ivy-3.1.1.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/mongodb/casbah-gridfs_2.11/3.1.1/casbah-gridfs_2.11-3.1.1.pom"/>
+				<caller organisation="org.mongodb" name="casbah_2.11" conf="default, compile, runtime, master" rev="3.1.1" rev-constraint-default="3.1.1" rev-constraint-dynamic="3.1.1" callerrev="3.1.1"/>
+				<artifacts>
+					<artifact name="casbah-gridfs_2.11" type="jar" ext="jar" status="no" details="" size="80738" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.mongodb/casbah-gridfs_2.11/jars/casbah-gridfs_2.11-3.1.1.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/mongodb/casbah-gridfs_2.11/3.1.1/casbah-gridfs_2.11-3.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.mongodb" name="casbah-core_2.11">
+			<revision name="3.1.1" status="release" pubdate="20160302034103" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/mongodb/casbah" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="43">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="2825" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.mongodb/casbah-core_2.11/ivy-3.1.1.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/mongodb/casbah-core_2.11/3.1.1/casbah-core_2.11-3.1.1.pom"/>
+				<caller organisation="com.novus" name="salat-core_2.11" conf="compile, runtime" rev="2.7.1" rev-constraint-default="2.7.1" rev-constraint-dynamic="2.7.1" callerrev="1.9.9"/>
+				<caller organisation="org.mongodb" name="casbah_2.11" conf="default, compile, runtime, master" rev="3.1.1" rev-constraint-default="3.1.1" rev-constraint-dynamic="3.1.1" callerrev="3.1.1"/>
+				<caller organisation="org.mongodb" name="casbah-gridfs_2.11" conf="compile, runtime" rev="3.1.1" rev-constraint-default="3.1.1" rev-constraint-dynamic="3.1.1" callerrev="3.1.1"/>
+				<artifacts>
+					<artifact name="casbah-core_2.11" type="jar" ext="jar" status="no" details="" size="291875" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.mongodb/casbah-core_2.11/jars/casbah-core_2.11-3.1.1.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/mongodb/casbah-core_2.11/3.1.1/casbah-core_2.11-3.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.7.1" status="release" pubdate="20140430153800" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://github.com/mongodb/casbah" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="3579" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.mongodb/casbah-core_2.11/ivy-2.7.1.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/mongodb/casbah-core_2.11/2.7.1/casbah-core_2.11-2.7.1.pom"/>
+				<evicted-by rev="3.1.1"/>
+				<caller organisation="com.novus" name="salat-core_2.11" conf="compile, runtime" rev="2.7.1" rev-constraint-default="2.7.1" rev-constraint-dynamic="2.7.1" callerrev="1.9.9"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.mongodb" name="casbah-query_2.11">
+			<revision name="3.1.1" status="release" pubdate="20160302034105" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/mongodb/casbah" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="44">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="2681" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.mongodb/casbah-query_2.11/ivy-3.1.1.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/mongodb/casbah-query_2.11/3.1.1/casbah-query_2.11-3.1.1.pom"/>
+				<caller organisation="org.mongodb" name="casbah-core_2.11" conf="compile, runtime" rev="2.7.1" rev-constraint-default="2.7.1" rev-constraint-dynamic="2.7.1" callerrev="2.7.1"/>
+				<caller organisation="org.mongodb" name="casbah_2.11" conf="default, compile, runtime, master" rev="3.1.1" rev-constraint-default="3.1.1" rev-constraint-dynamic="3.1.1" callerrev="3.1.1"/>
+				<caller organisation="org.mongodb" name="casbah-core_2.11" conf="compile, runtime" rev="3.1.1" rev-constraint-default="3.1.1" rev-constraint-dynamic="3.1.1" callerrev="3.1.1"/>
+				<artifacts>
+					<artifact name="casbah-query_2.11" type="jar" ext="jar" status="no" details="" size="235588" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.mongodb/casbah-query_2.11/jars/casbah-query_2.11-3.1.1.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/mongodb/casbah-query_2.11/3.1.1/casbah-query_2.11-3.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.7.1" status="release" pubdate="20140430153800" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://github.com/mongodb/casbah" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="3435" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.mongodb/casbah-query_2.11/ivy-2.7.1.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/mongodb/casbah-query_2.11/2.7.1/casbah-query_2.11-2.7.1.pom"/>
+				<evicted-by rev="3.1.1"/>
+				<caller organisation="org.mongodb" name="casbah-core_2.11" conf="compile, runtime" rev="2.7.1" rev-constraint-default="2.7.1" rev-constraint-dynamic="2.7.1" callerrev="2.7.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.mongodb" name="casbah-commons_2.11">
+			<revision name="3.1.1" status="release" pubdate="20160302034102" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/mongodb/casbah" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="41">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="3461" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.mongodb/casbah-commons_2.11/ivy-3.1.1.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/mongodb/casbah-commons_2.11/3.1.1/casbah-commons_2.11-3.1.1.pom"/>
+				<caller organisation="org.mongodb" name="casbah-core_2.11" conf="compile, runtime" rev="2.7.1" rev-constraint-default="2.7.1" rev-constraint-dynamic="2.7.1" callerrev="2.7.1"/>
+				<caller organisation="org.mongodb" name="casbah-query_2.11" conf="compile, runtime" rev="3.1.1" rev-constraint-default="3.1.1" rev-constraint-dynamic="3.1.1" callerrev="3.1.1"/>
+				<caller organisation="org.mongodb" name="casbah_2.11" conf="default, compile, runtime, master" rev="3.1.1" rev-constraint-default="3.1.1" rev-constraint-dynamic="3.1.1" callerrev="3.1.1"/>
+				<caller organisation="org.mongodb" name="casbah-query_2.11" conf="compile, runtime" rev="2.7.1" rev-constraint-default="2.7.1" rev-constraint-dynamic="2.7.1" callerrev="2.7.1"/>
+				<caller organisation="org.mongodb" name="casbah-core_2.11" conf="compile, runtime" rev="3.1.1" rev-constraint-default="3.1.1" rev-constraint-dynamic="3.1.1" callerrev="3.1.1"/>
+				<artifacts>
+					<artifact name="casbah-commons_2.11" type="jar" ext="jar" status="no" details="" size="174850" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.mongodb/casbah-commons_2.11/jars/casbah-commons_2.11-3.1.1.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/mongodb/casbah-commons_2.11/3.1.1/casbah-commons_2.11-3.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.7.1" status="release" pubdate="20140430153800" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://github.com/mongodb/casbah" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="3440" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.mongodb/casbah-commons_2.11/ivy-2.7.1.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/mongodb/casbah-commons_2.11/2.7.1/casbah-commons_2.11-2.7.1.pom"/>
+				<evicted-by rev="3.1.1"/>
+				<caller organisation="org.mongodb" name="casbah-core_2.11" conf="compile, runtime" rev="2.7.1" rev-constraint-default="2.7.1" rev-constraint-dynamic="2.7.1" callerrev="2.7.1"/>
+				<caller organisation="org.mongodb" name="casbah-query_2.11" conf="compile, runtime" rev="2.7.1" rev-constraint-default="2.7.1" rev-constraint-dynamic="2.7.1" callerrev="2.7.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.mongodb" name="mongo-java-driver">
+			<revision name="3.2.2" status="release" pubdate="20160216060337" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.mongodb.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="42">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2992" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.mongodb/mongo-java-driver/ivy-3.2.2.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/mongodb/mongo-java-driver/3.2.2/mongo-java-driver-3.2.2.pom"/>
+				<caller organisation="org.mongodb" name="casbah-commons_2.11" conf="compile, runtime" rev="3.2.2" rev-constraint-default="3.2.2" rev-constraint-dynamic="3.2.2" callerrev="3.1.1"/>
+				<caller organisation="org.mongodb" name="casbah-commons_2.11" conf="compile, runtime" rev="2.12.1" rev-constraint-default="2.12.1" rev-constraint-dynamic="2.12.1" callerrev="2.7.1"/>
+				<artifacts>
+					<artifact name="mongo-java-driver" type="jar" ext="jar" status="no" details="" size="1484724" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.mongodb/mongo-java-driver/jars/mongo-java-driver-3.2.2.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/mongodb/mongo-java-driver/3.2.2/mongo-java-driver-3.2.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.12.1" status="release" pubdate="20140429210500" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://www.mongodb.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2385" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.mongodb/mongo-java-driver/ivy-2.12.1.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/mongodb/mongo-java-driver/2.12.1/mongo-java-driver-2.12.1.pom"/>
+				<evicted-by rev="3.2.2"/>
+				<caller organisation="org.mongodb" name="casbah-commons_2.11" conf="compile, runtime" rev="2.12.1" rev-constraint-default="2.12.1" rev-constraint-dynamic="2.12.1" callerrev="2.7.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.novus" name="salat_2.11">
+			<revision name="1.9.9" status="release" pubdate="20140820214600" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/novus/salat" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="33">
+				<license name="Apache 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2723" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/com.novus/salat_2.11/ivy-1.9.9.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/novus/salat_2.11/1.9.9/salat_2.11-1.9.9.pom"/>
+				<caller organisation="com.appadhoc" name="adhoc-auth_2.11" conf="compile" rev="1.9.9" rev-constraint-default="1.9.9" rev-constraint-dynamic="1.9.9" callerrev="1.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.novus" name="salat-core_2.11">
+			<revision name="1.9.9" status="release" pubdate="20140820214600" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/novus/salat" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="39">
+				<license name="Apache 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3876" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/com.novus/salat-core_2.11/ivy-1.9.9.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/novus/salat-core_2.11/1.9.9/salat-core_2.11-1.9.9.pom"/>
+				<caller organisation="com.novus" name="salat_2.11" conf="default, compile, runtime, master" rev="1.9.9" rev-constraint-default="1.9.9" rev-constraint-dynamic="1.9.9" callerrev="1.9.9"/>
+				<artifacts>
+					<artifact name="salat-core_2.11" type="jar" ext="jar" status="no" details="" size="695480" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/com.novus/salat-core_2.11/jars/salat-core_2.11-1.9.9.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/com/novus/salat-core_2.11/1.9.9/salat-core_2.11-1.9.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.novus" name="salat-util_2.11">
+			<revision name="1.9.9" status="release" pubdate="20140820214600" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/novus/salat" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="34">
+				<license name="Apache 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3599" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/com.novus/salat-util_2.11/ivy-1.9.9.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/novus/salat-util_2.11/1.9.9/salat-util_2.11-1.9.9.pom"/>
+				<caller organisation="com.novus" name="salat-core_2.11" conf="compile, runtime" rev="1.9.9" rev-constraint-default="1.9.9" rev-constraint-dynamic="1.9.9" callerrev="1.9.9"/>
+				<caller organisation="com.novus" name="salat_2.11" conf="default, compile, runtime, master" rev="1.9.9" rev-constraint-default="1.9.9" rev-constraint-dynamic="1.9.9" callerrev="1.9.9"/>
+				<artifacts>
+					<artifact name="salat-util_2.11" type="jar" ext="jar" status="no" details="" size="142026" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/com.novus/salat-util_2.11/jars/salat-util_2.11-1.9.9.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/com/novus/salat-util_2.11/1.9.9/salat-util_2.11-1.9.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scalap">
+			<revision name="2.11.2" status="release" pubdate="20140723143900" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="35">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2514" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.scala-lang/scalap/ivy-2.11.2.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/scala-lang/scalap/2.11.2/scalap-2.11.2.pom"/>
+				<caller organisation="com.novus" name="salat-util_2.11" conf="compile, runtime" rev="2.11.2" rev-constraint-default="2.11.2" rev-constraint-dynamic="2.11.2" callerrev="1.9.9"/>
+				<artifacts>
+					<artifact name="scalap" type="jar" ext="jar" status="no" details="" size="757711" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.scala-lang/scalap/jars/scalap-2.11.2.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/scala-lang/scalap/2.11.2/scalap-2.11.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalaj" name="scalaj-http_2.11">
+			<revision name="2.3.0" status="release" pubdate="20160403052521" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/scalaj/scalaj-http" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="32">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3039" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.scalaj/scalaj-http_2.11/ivy-2.3.0.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/scalaj/scalaj-http_2.11/2.3.0/scalaj-http_2.11-2.3.0.pom"/>
+				<caller organisation="com.appadhoc" name="adhoc-auth_2.11" conf="compile" rev="2.3.0" rev-constraint-default="2.3.0" rev-constraint-dynamic="2.3.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="scalaj-http_2.11" type="jar" ext="jar" status="no" details="" size="156197" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.scalaj/scalaj-http_2.11/jars/scalaj-http_2.11-2.3.0.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/scalaj/scalaj-http_2.11/2.3.0/scalaj-http_2.11-2.3.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-slf4j_2.11">
+			<revision name="2.3.9" status="release" pubdate="20150120141900" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="31">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3073" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/ivy-2.3.9.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/typesafe/akka/akka-slf4j_2.11/2.3.9/akka-slf4j_2.11-2.3.9.pom"/>
+				<caller organisation="com.appadhoc" name="adhoc-auth_2.11" conf="compile" rev="2.3.9" rev-constraint-default="2.3.9" rev-constraint-dynamic="2.3.9" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="akka-slf4j_2.11" type="jar" ext="jar" status="no" details="" size="15459" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.9.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/com/typesafe/akka/akka-slf4j_2.11/2.3.9/akka-slf4j_2.11-2.3.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-actor_2.11">
+			<revision name="2.3.9" status="release" pubdate="20150120141800" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="29">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2666" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/ivy-2.3.9.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/typesafe/akka/akka-actor_2.11/2.3.9/akka-actor_2.11-2.3.9.pom"/>
+				<caller organisation="net.debasishg" name="redisclient_2.11" conf="compile, runtime" rev="2.3.6" rev-constraint-default="2.3.6" rev-constraint-dynamic="2.3.6" callerrev="2.15"/>
+				<caller organisation="com.typesafe.akka" name="akka-slf4j_2.11" conf="default, compile, runtime, master" rev="2.3.9" rev-constraint-default="2.3.9" rev-constraint-dynamic="2.3.9" callerrev="2.3.9"/>
+				<caller organisation="com.appadhoc" name="adhoc-auth_2.11" conf="compile" rev="2.3.9" rev-constraint-default="2.3.9" rev-constraint-dynamic="2.3.9" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="akka-actor_2.11" type="jar" ext="jar" status="no" details="" size="2571077" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.9.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/com/typesafe/akka/akka-actor_2.11/2.3.9/akka-actor_2.11-2.3.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.3.6" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="runtime(*), master(compile), compile(*)" position="-1">
+				<evicted-by rev="2.3.9"/>
+				<caller organisation="net.debasishg" name="redisclient_2.11" conf="compile, runtime" rev="2.3.6" rev-constraint-default="2.3.6" rev-constraint-dynamic="2.3.6" callerrev="2.15"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe" name="config">
+			<revision name="1.2.1" status="release" pubdate="20140502225400" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typesafehub/config" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="30">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2752" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/com.typesafe/config/ivy-1.2.1.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/typesafe/config/1.2.1/config-1.2.1.pom"/>
+				<caller organisation="com.typesafe.akka" name="akka-actor_2.11" conf="default, compile, runtime, master" rev="1.2.1" rev-constraint-default="1.2.1" rev-constraint-dynamic="1.2.1" callerrev="2.3.9"/>
+				<artifacts>
+					<artifact name="config" type="bundle" ext="jar" status="no" details="" size="219554" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/com/typesafe/config/1.2.1/config-1.2.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-async_2.11">
+			<revision name="0.9.2" status="release" pubdate="20140722051100" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/scala/async" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="26">
+				<license name="Scala license" url="https://github.com/scala/async/blob/master/LICENSE"/>
+				<metadata-artifact status="no" details="" size="3141" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.scala-lang.modules/scala-async_2.11/ivy-0.9.2.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/scala-lang/modules/scala-async_2.11/0.9.2/scala-async_2.11-0.9.2.pom"/>
+				<caller organisation="com.appadhoc" name="adhoc-auth_2.11" conf="compile" rev="0.9.2" rev-constraint-default="0.9.2" rev-constraint-dynamic="0.9.2" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="scala-async_2.11" type="bundle" ext="jar" status="no" details="" size="469402" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.scala-lang.modules/scala-async_2.11/bundles/scala-async_2.11-0.9.2.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/scala-lang/modules/scala-async_2.11/0.9.2/scala-async_2.11-0.9.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.appadhoc" name="adhoc-common_2.11">
+			<revision name="1.0.1" status="release" pubdate="20161102143313" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="4">
+				<metadata-artifact status="no" details="" size="3401" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/com.appadhoc/adhoc-common_2.11/ivy-1.0.1.xml" searched="false" origin-is-local="false" origin-location="http://nexus.appadhoc.com/content/repositories/releases/com/appadhoc/adhoc-common_2.11/1.0.1/adhoc-common_2.11-1.0.1.pom"/>
+				<caller organisation="com.appadhoc" name="adhoc-auth_2.11" conf="compile" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="adhoc-common_2.11" type="jar" ext="jar" status="no" details="" size="502228" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/com.appadhoc/adhoc-common_2.11/jars/adhoc-common_2.11-1.0.1.jar">
+						<origin-location is-local="false" location="http://nexus.appadhoc.com/content/repositories/releases/com/appadhoc/adhoc-common_2.11/1.0.1/adhoc-common_2.11-1.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.spray" name="spray-routing_2.11">
+			<revision name="1.3.3" status="release" pubdate="20150324214900" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spray.io" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="18">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3624" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/io.spray/spray-routing_2.11/ivy-1.3.3.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/io/spray/spray-routing_2.11/1.3.3/spray-routing_2.11-1.3.3.pom"/>
+				<caller organisation="com.appadhoc" name="adhoc-common_2.11" conf="default, compile, runtime, master" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="1.0.1"/>
+				<caller organisation="com.appadhoc" name="adhoc-auth_2.11" conf="compile" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="spray-routing_2.11" type="bundle" ext="jar" status="no" details="" size="1064515" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/io.spray/spray-routing_2.11/bundles/spray-routing_2.11-1.3.3.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/io/spray/spray-routing_2.11/1.3.3/spray-routing_2.11-1.3.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.chuusai" name="shapeless_2.11">
+			<revision name="1.2.4" status="release" pubdate="20130619210214" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/milessabin/shapeless" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="25">
+				<license name="Apache License" url="http://www.apache.org/licenses/"/>
+				<metadata-artifact status="no" details="" size="2649" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/com.chuusai/shapeless_2.11/ivy-1.2.4.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/chuusai/shapeless_2.11/1.2.4/shapeless_2.11-1.2.4.pom"/>
+				<caller organisation="io.spray" name="spray-routing_2.11" conf="compile, runtime" rev="1.2.4" rev-constraint-default="1.2.4" rev-constraint-dynamic="1.2.4" callerrev="1.3.3"/>
+				<artifacts>
+					<artifact name="shapeless_2.11" type="jar" ext="jar" status="no" details="" size="1260628" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/com.chuusai/shapeless_2.11/jars/shapeless_2.11-1.2.4.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/com/chuusai/shapeless_2.11/1.2.4/shapeless_2.11-1.2.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.spray" name="spray-httpx_2.11">
+			<revision name="1.3.3" status="release" pubdate="20150324215100" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spray.io" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="23">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4514" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/io.spray/spray-httpx_2.11/ivy-1.3.3.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/io/spray/spray-httpx_2.11/1.3.3/spray-httpx_2.11-1.3.3.pom"/>
+				<caller organisation="io.spray" name="spray-routing_2.11" conf="compile, runtime" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="1.3.3"/>
+				<artifacts>
+					<artifact name="spray-httpx_2.11" type="bundle" ext="jar" status="no" details="" size="437070" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/io.spray/spray-httpx_2.11/bundles/spray-httpx_2.11-1.3.3.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/io/spray/spray-httpx_2.11/1.3.3/spray-httpx_2.11-1.3.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jvnet.mimepull" name="mimepull">
+			<revision name="1.9.5" status="release" pubdate="20150313191000" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://mimepull.java.net" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="24">
+				<license name="CDDL 1.1" url="https://glassfish.java.net/public/CDDL+GPL_1_1.html"/>
+				<license name="GPL2 w/ CPE" url="https://glassfish.java.net/public/CDDL+GPL_1_1.html"/>
+				<metadata-artifact status="no" details="" size="3827" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.jvnet.mimepull/mimepull/ivy-1.9.5.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/jvnet/mimepull/mimepull/1.9.5/mimepull-1.9.5.pom"/>
+				<caller organisation="io.spray" name="spray-httpx_2.11" conf="compile, runtime" rev="1.9.5" rev-constraint-default="1.9.5" rev-constraint-dynamic="1.9.5" callerrev="1.3.3"/>
+				<artifacts>
+					<artifact name="mimepull" type="jar" ext="jar" status="no" details="" size="63621" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.jvnet.mimepull/mimepull/jars/mimepull-1.9.5.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/jvnet/mimepull/mimepull/1.9.5/mimepull-1.9.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.spray" name="spray-can_2.11">
+			<revision name="1.3.3" status="release" pubdate="20150324214800" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spray.io" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="27">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3428" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/io.spray/spray-can_2.11/ivy-1.3.3.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/io/spray/spray-can_2.11/1.3.3/spray-can_2.11-1.3.3.pom"/>
+				<caller organisation="com.appadhoc" name="adhoc-auth_2.11" conf="compile" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="spray-can_2.11" type="bundle" ext="jar" status="no" details="" size="720710" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/io.spray/spray-can_2.11/bundles/spray-can_2.11-1.3.3.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/io/spray/spray-can_2.11/1.3.3/spray-can_2.11-1.3.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.spray" name="spray-io_2.11">
+			<revision name="1.3.3" status="release" pubdate="20150324215200" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spray.io" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="28">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3184" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/io.spray/spray-io_2.11/ivy-1.3.3.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/io/spray/spray-io_2.11/1.3.3/spray-io_2.11-1.3.3.pom"/>
+				<caller organisation="io.spray" name="spray-can_2.11" conf="default, compile, runtime, master" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="1.3.3"/>
+				<artifacts>
+					<artifact name="spray-io_2.11" type="bundle" ext="jar" status="no" details="" size="189178" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/io.spray/spray-io_2.11/bundles/spray-io_2.11-1.3.3.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/io/spray/spray-io_2.11/1.3.3/spray-io_2.11-1.3.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.spray" name="spray-http_2.11">
+			<revision name="1.3.3" status="release" pubdate="20150324215100" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spray.io" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="19">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3170" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/io.spray/spray-http_2.11/ivy-1.3.3.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/io/spray/spray-http_2.11/1.3.3/spray-http_2.11-1.3.3.pom"/>
+				<caller organisation="io.spray" name="spray-httpx_2.11" conf="compile, runtime" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="1.3.3"/>
+				<caller organisation="io.spray" name="spray-can_2.11" conf="default, compile, runtime, master" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="1.3.3"/>
+				<caller organisation="io.spray" name="spray-io_2.11" conf="compile, runtime" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="1.3.3"/>
+				<caller organisation="io.spray" name="spray-routing_2.11" conf="compile, runtime" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="1.3.3"/>
+				<artifacts>
+					<artifact name="spray-http_2.11" type="bundle" ext="jar" status="no" details="" size="1502842" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/io.spray/spray-http_2.11/bundles/spray-http_2.11-1.3.3.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/io/spray/spray-http_2.11/1.3.3/spray-http_2.11-1.3.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.parboiled" name="parboiled-scala_2.11">
+			<revision name="1.1.7" status="release" pubdate="20150210001100" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://parboiled.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="21">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2968" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.parboiled/parboiled-scala_2.11/ivy-1.1.7.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/parboiled/parboiled-scala_2.11/1.1.7/parboiled-scala_2.11-1.1.7.pom"/>
+				<caller organisation="io.spray" name="spray-http_2.11" conf="compile, runtime" rev="1.1.7" rev-constraint-default="1.1.7" rev-constraint-dynamic="1.1.7" callerrev="1.3.3"/>
+				<artifacts>
+					<artifact name="parboiled-scala_2.11" type="jar" ext="jar" status="no" details="" size="233224" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.parboiled/parboiled-scala_2.11/jars/parboiled-scala_2.11-1.1.7.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/parboiled/parboiled-scala_2.11/1.1.7/parboiled-scala_2.11-1.1.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.parboiled" name="parboiled-core">
+			<revision name="1.1.7" status="release" pubdate="20150210001200" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://parboiled.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="22">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2663" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.parboiled/parboiled-core/ivy-1.1.7.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/parboiled/parboiled-core/1.1.7/parboiled-core-1.1.7.pom"/>
+				<caller organisation="org.parboiled" name="parboiled-scala_2.11" conf="compile, runtime" rev="1.1.7" rev-constraint-default="1.1.7" rev-constraint-dynamic="1.1.7" callerrev="1.1.7"/>
+				<artifacts>
+					<artifact name="parboiled-core" type="jar" ext="jar" status="no" details="" size="186607" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.parboiled/parboiled-core/jars/parboiled-core-1.1.7.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/parboiled/parboiled-core/1.1.7/parboiled-core-1.1.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.spray" name="spray-util_2.11">
+			<revision name="1.3.3" status="release" pubdate="20150324214800" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spray.io" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="20">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3157" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/io.spray/spray-util_2.11/ivy-1.3.3.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/io/spray/spray-util_2.11/1.3.3/spray-util_2.11-1.3.3.pom"/>
+				<caller organisation="io.spray" name="spray-httpx_2.11" conf="compile, runtime" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="1.3.3"/>
+				<caller organisation="io.spray" name="spray-can_2.11" conf="default, compile, runtime, master" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="1.3.3"/>
+				<caller organisation="io.spray" name="spray-io_2.11" conf="compile, runtime" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="1.3.3"/>
+				<caller organisation="io.spray" name="spray-http_2.11" conf="compile, runtime" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="1.3.3"/>
+				<caller organisation="io.spray" name="spray-routing_2.11" conf="compile, runtime" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="1.3.3"/>
+				<artifacts>
+					<artifact name="spray-util_2.11" type="bundle" ext="jar" status="no" details="" size="128702" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/io.spray/spray-util_2.11/bundles/spray-util_2.11-1.3.3.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/io/spray/spray-util_2.11/1.3.3/spray-util_2.11-1.3.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-reflect">
+			<revision name="2.11.6" status="release" pubdate="20150226090100" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.6/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="37">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2825" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.11.6.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/scala-lang/scala-reflect/2.11.6/scala-reflect-2.11.6.pom"/>
+				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="2.11.6"/>
+				<caller organisation="org.scala-lang.modules" name="scala-pickling_2.11" conf="default, compile, runtime, master" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.4" callerrev="0.10.0"/>
+				<artifacts>
+					<artifact name="scala-reflect" type="jar" ext="jar" status="no" details="" size="4450173" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.6.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/scala-lang/scala-reflect/2.11.6/scala-reflect-2.11.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.debasishg" name="redisclient_2.11">
+			<revision name="2.15" status="release" pubdate="20150323234500" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/debasishg/scala-redis" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="16">
+				<license name="Apache 2.0 License" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="3338" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/net.debasishg/redisclient_2.11/ivy-2.15.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/net/debasishg/redisclient_2.11/2.15/redisclient_2.11-2.15.pom"/>
+				<caller organisation="com.appadhoc" name="adhoc-common_2.11" conf="default, compile, runtime, master" rev="2.15" rev-constraint-default="2.15" rev-constraint-dynamic="2.15" callerrev="1.0.1"/>
+				<caller organisation="com.appadhoc" name="adhoc-auth_2.11" conf="compile" rev="2.15" rev-constraint-default="2.15" rev-constraint-dynamic="2.15" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="redisclient_2.11" type="jar" ext="jar" status="no" details="" size="747457" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/net.debasishg/redisclient_2.11/jars/redisclient_2.11-2.15.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/net/debasishg/redisclient_2.11/2.15/redisclient_2.11-2.15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-pool" name="commons-pool">
+			<revision name="1.6" status="release" pubdate="20120109233304" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/pool/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="17">
+				<metadata-artifact status="no" details="" size="7368" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/commons-pool/commons-pool/ivy-1.6.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/commons-pool/commons-pool/1.6/commons-pool-1.6.pom"/>
+				<caller organisation="net.debasishg" name="redisclient_2.11" conf="compile, runtime" rev="1.6" rev-constraint-default="1.6" rev-constraint-dynamic="1.6" callerrev="2.15"/>
+				<artifacts>
+					<artifact name="commons-pool" type="jar" ext="jar" status="no" details="" size="111119" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/commons-pool/commons-pool/jars/commons-pool-1.6.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/commons-pool/commons-pool/1.6/commons-pool-1.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.json4s" name="json4s-ext_2.11">
+			<revision name="3.3.0.RC6" status="release" pubdate="20150930045759" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/json4s/json4s" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="14">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2928" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.json4s/json4s-ext_2.11/ivy-3.3.0.RC6.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/json4s/json4s-ext_2.11/3.3.0.RC6/json4s-ext_2.11-3.3.0.RC6.pom"/>
+				<caller organisation="com.appadhoc" name="adhoc-common_2.11" conf="default, compile, runtime, master" rev="3.3.0.RC6" rev-constraint-default="3.3.0.RC6" rev-constraint-dynamic="3.3.0.RC6" callerrev="1.0.1"/>
+				<caller organisation="com.appadhoc" name="adhoc-auth_2.11" conf="compile" rev="3.3.0.RC6" rev-constraint-default="3.3.0.RC6" rev-constraint-dynamic="3.3.0.RC6" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="json4s-ext_2.11" type="jar" ext="jar" status="no" details="" size="83081" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.json4s/json4s-ext_2.11/jars/json4s-ext_2.11-3.3.0.RC6.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/json4s/json4s-ext_2.11/3.3.0.RC6/json4s-ext_2.11-3.3.0.RC6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.joda" name="joda-convert">
+			<revision name="1.7" status="release" pubdate="20140804223700" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.joda.org/joda-convert/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="15">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="6126" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.joda/joda-convert/ivy-1.7.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/joda/joda-convert/1.7/joda-convert-1.7.pom"/>
+				<caller organisation="com.github.nscala-time" name="nscala-time_2.11" conf="default, compile, runtime, master" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="2.4.0"/>
+				<caller organisation="org.json4s" name="json4s-ext_2.11" conf="compile, runtime" rev="1.7" rev-constraint-default="1.7" rev-constraint-dynamic="1.7" callerrev="3.3.0.RC6"/>
+				<artifacts>
+					<artifact name="joda-convert" type="jar" ext="jar" status="no" details="" size="102981" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.7.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/joda/joda-convert/1.7/joda-convert-1.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.2" status="release" pubdate="20131007013714" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://joda-convert.sourceforge.net" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3120" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.joda/joda-convert/ivy-1.2.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/joda/joda-convert/1.2/joda-convert-1.2.pom"/>
+				<evicted-by rev="1.7"/>
+				<caller organisation="com.github.nscala-time" name="nscala-time_2.11" conf="default, compile, runtime, master" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="2.4.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.json4s" name="json4s-native_2.11">
+			<revision name="3.3.0.RC6" status="release" pubdate="20150922025523" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/json4s/json4s" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="8">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2684" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.json4s/json4s-native_2.11/ivy-3.3.0.RC6.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/json4s/json4s-native_2.11/3.3.0.RC6/json4s-native_2.11-3.3.0.RC6.pom"/>
+				<caller organisation="com.novus" name="salat-core_2.11" conf="compile, runtime" rev="3.2.9" rev-constraint-default="3.2.9" rev-constraint-dynamic="3.2.9" callerrev="1.9.9"/>
+				<caller organisation="com.appadhoc" name="adhoc-common_2.11" conf="default, compile, runtime, master" rev="3.3.0.RC6" rev-constraint-default="3.3.0.RC6" rev-constraint-dynamic="3.3.0.RC6" callerrev="1.0.1"/>
+				<caller organisation="com.appadhoc" name="adhoc-auth_2.11" conf="compile" rev="3.3.0.RC6" rev-constraint-default="3.3.0.RC6" rev-constraint-dynamic="3.3.0.RC6" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="json4s-native_2.11" type="jar" ext="jar" status="no" details="" size="73877" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.json4s/json4s-native_2.11/jars/json4s-native_2.11-3.3.0.RC6.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/json4s/json4s-native_2.11/3.3.0.RC6/json4s-native_2.11-3.3.0.RC6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="3.2.9" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="3.3.0.RC6"/>
+				<caller organisation="com.novus" name="salat-core_2.11" conf="compile, runtime" rev="3.2.9" rev-constraint-default="3.2.9" rev-constraint-dynamic="3.2.9" callerrev="1.9.9"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.json4s" name="json4s-core_2.11">
+			<revision name="3.3.0.RC6" status="release" pubdate="20150922025522" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/json4s/json4s" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="9">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3135" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.json4s/json4s-core_2.11/ivy-3.3.0.RC6.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/json4s/json4s-core_2.11/3.3.0.RC6/json4s-core_2.11-3.3.0.RC6.pom"/>
+				<caller organisation="org.json4s" name="json4s-native_2.11" conf="compile, runtime" rev="3.3.0.RC6" rev-constraint-default="3.3.0.RC6" rev-constraint-dynamic="3.3.0.RC6" callerrev="3.3.0.RC6"/>
+				<artifacts>
+					<artifact name="json4s-core_2.11" type="jar" ext="jar" status="no" details="" size="615853" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.json4s/json4s-core_2.11/jars/json4s-core_2.11-3.3.0.RC6.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/json4s/json4s-core_2.11/3.3.0.RC6/json4s-core_2.11-3.3.0.RC6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-xml_2.11">
+			<revision name="1.0.5" status="release" pubdate="20150725110253" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="13">
+				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="3011" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/ivy-1.0.5.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.pom"/>
+				<caller organisation="org.json4s" name="json4s-core_2.11" conf="compile, runtime" rev="1.0.5" rev-constraint-default="1.0.5" rev-constraint-dynamic="1.0.5" callerrev="3.3.0.RC6"/>
+				<caller organisation="io.spray" name="spray-httpx_2.11" conf="compile, runtime" rev="1.0.3" rev-constraint-default="1.0.3" rev-constraint-dynamic="1.0.3" callerrev="1.3.3"/>
+				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="1.0.3" rev-constraint-default="1.0.3" rev-constraint-dynamic="1.0.3" callerrev="2.11.6"/>
+				<artifacts>
+					<artifact name="scala-xml_2.11" type="bundle" ext="jar" status="no" details="" size="671138" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.5.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.0.3" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.0.5"/>
+				<caller organisation="io.spray" name="spray-httpx_2.11" conf="compile, runtime" rev="1.0.3" rev-constraint-default="1.0.3" rev-constraint-dynamic="1.0.3" callerrev="1.3.3"/>
+				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="1.0.3" rev-constraint-default="1.0.3" rev-constraint-dynamic="1.0.3" callerrev="2.11.6"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.thoughtworks.paranamer" name="paranamer">
+			<revision name="2.8" status="release" pubdate="20150827020215" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="12">
+				<metadata-artifact status="no" details="" size="4211" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/com.thoughtworks.paranamer/paranamer/ivy-2.8.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8.pom"/>
+				<caller organisation="org.json4s" name="json4s-core_2.11" conf="compile, runtime" rev="2.8" rev-constraint-default="2.8" rev-constraint-dynamic="2.8" callerrev="3.3.0.RC6"/>
+				<artifacts>
+					<artifact name="paranamer" type="bundle" ext="jar" status="no" details="" size="34654" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/com.thoughtworks.paranamer/paranamer/bundles/paranamer-2.8.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.json4s" name="json4s-scalap_2.11">
+			<revision name="3.3.0.RC6" status="release" pubdate="20150922025523" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/json4s/json4s" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="11">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2535" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.json4s/json4s-scalap_2.11/ivy-3.3.0.RC6.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/json4s/json4s-scalap_2.11/3.3.0.RC6/json4s-scalap_2.11-3.3.0.RC6.pom"/>
+				<caller organisation="org.json4s" name="json4s-core_2.11" conf="compile, runtime" rev="3.3.0.RC6" rev-constraint-default="3.3.0.RC6" rev-constraint-dynamic="3.3.0.RC6" callerrev="3.3.0.RC6"/>
+				<artifacts>
+					<artifact name="json4s-scalap_2.11" type="jar" ext="jar" status="no" details="" size="607729" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.json4s/json4s-scalap_2.11/jars/json4s-scalap_2.11-3.3.0.RC6.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/json4s/json4s-scalap_2.11/3.3.0.RC6/json4s-scalap_2.11-3.3.0.RC6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.json4s" name="json4s-ast_2.11">
+			<revision name="3.3.0.RC6" status="release" pubdate="20150922025521" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/json4s/json4s" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="10">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2526" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.json4s/json4s-ast_2.11/ivy-3.3.0.RC6.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/json4s/json4s-ast_2.11/3.3.0.RC6/json4s-ast_2.11-3.3.0.RC6.pom"/>
+				<caller organisation="org.json4s" name="json4s-core_2.11" conf="compile, runtime" rev="3.3.0.RC6" rev-constraint-default="3.3.0.RC6" rev-constraint-dynamic="3.3.0.RC6" callerrev="3.3.0.RC6"/>
+				<artifacts>
+					<artifact name="json4s-ast_2.11" type="jar" ext="jar" status="no" details="" size="87099" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.json4s/json4s-ast_2.11/jars/json4s-ast_2.11-3.3.0.RC6.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/json4s/json4s-ast_2.11/3.3.0.RC6/json4s-ast_2.11-3.3.0.RC6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="ch.qos.logback" name="logback-classic">
+			<revision name="1.1.3" status="release" pubdate="20150324190100" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="5">
+				<metadata-artifact status="no" details="" size="9808" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/ch.qos.logback/logback-classic/ivy-1.1.3.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/ch/qos/logback/logback-classic/1.1.3/logback-classic-1.1.3.pom"/>
+				<caller organisation="com.appadhoc" name="adhoc-common_2.11" conf="default, compile, runtime, master" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="1.0.1"/>
+				<caller organisation="com.appadhoc" name="adhoc-auth_2.11" conf="compile" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="logback-classic" type="jar" ext="jar" status="no" details="" size="280928" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.3.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/ch/qos/logback/logback-classic/1.1.3/logback-classic-1.1.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-api">
+			<revision name="1.7.7" status="release" pubdate="20140404191200" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="7">
+				<metadata-artifact status="no" details="" size="4573" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.7.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.pom"/>
+				<caller organisation="net.debasishg" name="redisclient_2.11" conf="compile, runtime" rev="1.7.2" rev-constraint-default="1.7.2" rev-constraint-dynamic="1.7.2" callerrev="2.15"/>
+				<caller organisation="org.mongodb" name="casbah-core_2.11" conf="compile, runtime" rev="1.6.0" rev-constraint-default="1.6.0" rev-constraint-dynamic="1.6.0" callerrev="2.7.1"/>
+				<caller organisation="ch.qos.logback" name="logback-classic" conf="compile, runtime" rev="1.7.7" rev-constraint-default="1.7.7" rev-constraint-dynamic="1.7.7" callerrev="1.1.3"/>
+				<caller organisation="com.typesafe.akka" name="akka-slf4j_2.11" conf="default, compile, runtime, master" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="2.3.9"/>
+				<caller organisation="org.mongodb" name="casbah-query_2.11" conf="compile, runtime" rev="1.6.0" rev-constraint-default="1.6.0" rev-constraint-dynamic="1.6.0" callerrev="2.7.1"/>
+				<caller organisation="com.novus" name="salat-util_2.11" conf="compile, runtime" rev="1.7.2" rev-constraint-default="1.7.2" rev-constraint-dynamic="1.7.2" callerrev="1.9.9"/>
+				<caller organisation="org.mongodb" name="casbah-commons_2.11" conf="compile, runtime" rev="1.6.0" rev-constraint-default="1.6.0" rev-constraint-dynamic="1.6.0" callerrev="3.1.1"/>
+				<caller organisation="org.mongodb" name="casbah-commons_2.11" conf="compile, runtime" rev="1.6.0" rev-constraint-default="1.6.0" rev-constraint-dynamic="1.6.0" callerrev="2.7.1"/>
+				<artifacts>
+					<artifact name="slf4j-api" type="jar" ext="jar" status="no" details="" size="29257" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.7.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.6.0" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.7.7"/>
+				<caller organisation="org.mongodb" name="casbah-core_2.11" conf="compile, runtime" rev="1.6.0" rev-constraint-default="1.6.0" rev-constraint-dynamic="1.6.0" callerrev="2.7.1"/>
+				<caller organisation="net.debasishg" name="redisclient_2.11" conf="compile, runtime" rev="1.7.2" rev-constraint-default="1.7.2" rev-constraint-dynamic="1.7.2" callerrev="2.15"/>
+				<caller organisation="org.mongodb" name="casbah-query_2.11" conf="compile, runtime" rev="1.6.0" rev-constraint-default="1.6.0" rev-constraint-dynamic="1.6.0" callerrev="2.7.1"/>
+				<caller organisation="com.novus" name="salat-util_2.11" conf="compile, runtime" rev="1.7.2" rev-constraint-default="1.7.2" rev-constraint-dynamic="1.7.2" callerrev="1.9.9"/>
+				<caller organisation="org.mongodb" name="casbah-commons_2.11" conf="compile, runtime" rev="1.6.0" rev-constraint-default="1.6.0" rev-constraint-dynamic="1.6.0" callerrev="3.1.1"/>
+				<caller organisation="org.mongodb" name="casbah-commons_2.11" conf="compile, runtime" rev="1.6.0" rev-constraint-default="1.6.0" rev-constraint-dynamic="1.6.0" callerrev="2.7.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="1.7.5" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.7.7"/>
+				<caller organisation="com.typesafe.akka" name="akka-slf4j_2.11" conf="default, compile, runtime, master" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="2.3.9"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="1.7.2" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.6.0"/>
+				<caller organisation="net.debasishg" name="redisclient_2.11" conf="compile, runtime" rev="1.7.2" rev-constraint-default="1.7.2" rev-constraint-dynamic="1.7.2" callerrev="2.15"/>
+				<caller organisation="com.novus" name="salat-util_2.11" conf="compile, runtime" rev="1.7.2" rev-constraint-default="1.7.2" rev-constraint-dynamic="1.7.2" callerrev="1.9.9"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="ch.qos.logback" name="logback-core">
+			<revision name="1.1.3" status="release" pubdate="20150324190000" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="6">
+				<metadata-artifact status="no" details="" size="8851" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/ch.qos.logback/logback-core/ivy-1.1.3.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.pom"/>
+				<caller organisation="ch.qos.logback" name="logback-classic" conf="compile, runtime" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="1.1.3"/>
+				<artifacts>
+					<artifact name="logback-core" type="jar" ext="jar" status="no" details="" size="455041" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.3.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.github.nscala-time" name="nscala-time_2.11">
+			<revision name="2.4.0" status="release" pubdate="20151025005040" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/nscala-time/nscala-time" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master, runtime(*), master(compile), compile(*)" position="1">
+				<license name="Apache" url="http://www.opensource.org/licenses/Apache-2.0"/>
+				<metadata-artifact status="no" details="" size="2818" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/com.github.nscala-time/nscala-time_2.11/ivy-2.4.0.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/github/nscala-time/nscala-time_2.11/2.4.0/nscala-time_2.11-2.4.0.pom"/>
+				<caller organisation="org.mongodb" name="casbah-core_2.11" conf="compile, runtime" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="2.7.1"/>
+				<caller organisation="scala-fun" name="scala-fun_2.11" conf="compile" rev="2.4.0" rev-constraint-default="2.4.0" rev-constraint-dynamic="2.4.0" callerrev="1.0"/>
+				<caller organisation="org.mongodb" name="casbah-query_2.11" conf="compile, runtime" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="2.7.1"/>
+				<caller organisation="org.mongodb" name="casbah-commons_2.11" conf="compile, runtime" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="3.1.1"/>
+				<caller organisation="com.appadhoc" name="adhoc-auth_2.11" conf="compile" rev="2.4.0" rev-constraint-default="2.4.0" rev-constraint-dynamic="2.4.0" callerrev="1.0"/>
+				<caller organisation="org.mongodb" name="casbah-commons_2.11" conf="compile, runtime" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="2.7.1"/>
+				<artifacts>
+					<artifact name="nscala-time_2.11" type="jar" ext="jar" status="no" details="" size="200905" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/com.github.nscala-time/nscala-time_2.11/jars/nscala-time_2.11-2.4.0.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/com/github/nscala-time/nscala-time_2.11/2.4.0/nscala-time_2.11-2.4.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.0.0" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master, default, default(compile)" position="-1">
+				<evicted-by rev="2.4.0"/>
+				<caller organisation="org.mongodb" name="casbah-core_2.11" conf="compile, runtime" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="2.7.1"/>
+				<caller organisation="scala-fun" name="scala-fun_2.11" conf="compile" rev="2.4.0" rev-constraint-default="2.4.0" rev-constraint-dynamic="2.4.0" callerrev="1.0"/>
+				<caller organisation="org.mongodb" name="casbah-query_2.11" conf="compile, runtime" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="2.7.1"/>
+				<caller organisation="org.mongodb" name="casbah-commons_2.11" conf="compile, runtime" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="3.1.1"/>
+				<caller organisation="org.mongodb" name="casbah-commons_2.11" conf="compile, runtime" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="2.7.1"/>
+				<caller organisation="com.appadhoc" name="adhoc-auth_2.11" conf="compile" rev="2.4.0" rev-constraint-default="2.4.0" rev-constraint-dynamic="2.4.0" callerrev="1.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="joda-time" name="joda-time">
+			<revision name="2.9" status="release" pubdate="20151024174829" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.joda.org/joda-time/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="2">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="6467" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/joda-time/joda-time/ivy-2.9.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/joda-time/joda-time/2.9/joda-time-2.9.pom"/>
+				<caller organisation="com.github.nscala-time" name="nscala-time_2.11" conf="default, compile, runtime, master" rev="2.9" rev-constraint-default="2.9" rev-constraint-dynamic="2.9" callerrev="2.4.0"/>
+				<caller organisation="org.json4s" name="json4s-ext_2.11" conf="compile, runtime" rev="2.8.2" rev-constraint-default="2.8.2" rev-constraint-dynamic="2.8.2" callerrev="3.3.0.RC6"/>
+				<artifacts>
+					<artifact name="joda-time" type="jar" ext="jar" status="no" details="" size="625993" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.9.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/joda-time/joda-time/2.9/joda-time-2.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.8.2" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.9"/>
+				<caller organisation="org.json4s" name="json4s-ext_2.11" conf="compile, runtime" rev="2.8.2" rev-constraint-default="2.8.2" rev-constraint-dynamic="2.8.2" callerrev="3.3.0.RC6"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.11.8" status="release" pubdate="20160309121604" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.8/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master, runtime(*), master(compile), compile(*)" position="0">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2653" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.scala-lang/scala-library/ivy-2.11.8.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8.pom"/>
+				<caller organisation="org.mongodb" name="casbah-core_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.0" callerrev="2.7.1"/>
+				<caller organisation="com.novus" name="salat-core_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.2" callerrev="1.9.9"/>
+				<caller organisation="org.scala-lang.modules" name="scala-xml_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.7" callerrev="1.0.5"/>
+				<caller organisation="org.json4s" name="json4s-native_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.7" callerrev="3.3.0.RC6"/>
+				<caller organisation="org.mongodb" name="casbah-commons_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.0" callerrev="2.7.1"/>
+				<caller organisation="io.spray" name="spray-httpx_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="1.3.3"/>
+				<caller organisation="org.json4s" name="json4s-scalap_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.7" callerrev="3.3.0.RC6"/>
+				<caller organisation="io.spray" name="spray-can_2.11" conf="default, compile, runtime, master" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="1.3.3"/>
+				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="2.11.6"/>
+				<caller organisation="com.github.nscala-time" name="nscala-time_2.11" conf="default, compile, runtime, master" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="2.4.0"/>
+				<caller organisation="io.spray" name="spray-util_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="1.3.3"/>
+				<caller organisation="com.typesafe.akka" name="akka-slf4j_2.11" conf="default, compile, runtime, master" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.5" callerrev="2.3.9"/>
+				<caller organisation="com.appadhoc" name="adhoc-common_2.11" conf="default, compile, runtime, master" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="1.0.1"/>
+				<caller organisation="com.typesafe.akka" name="akka-actor_2.11" conf="default, compile, runtime, master" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.5" callerrev="2.3.9"/>
+				<caller organisation="org.mongodb" name="casbah_2.11" conf="default, compile, runtime, master" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.7" callerrev="3.1.1"/>
+				<caller organisation="org.mongodb" name="casbah-core_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.7" callerrev="3.1.1"/>
+				<caller organisation="com.appadhoc" name="adhoc-auth_2.11" conf="compile" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="1.0"/>
+				<caller organisation="org.json4s" name="json4s-core_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.7" callerrev="3.3.0.RC6"/>
+				<caller organisation="org.mongodb" name="casbah-query_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.7" callerrev="3.1.1"/>
+				<caller organisation="com.chuusai" name="shapeless_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.0-M3" callerrev="1.2.4"/>
+				<caller organisation="org.scala-lang.modules" name="scala-parser-combinators_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.2" callerrev="1.0.3"/>
+				<caller organisation="io.spray" name="spray-http_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="1.3.3"/>
+				<caller organisation="com.novus" name="salat_2.11" conf="default, compile, runtime, master" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.2" callerrev="1.9.9"/>
+				<caller organisation="org.scala-lang.modules" name="scala-pickling_2.11" conf="default, compile, runtime, master" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.4" callerrev="0.10.0"/>
+				<caller organisation="io.spray" name="spray-routing_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="1.3.3"/>
+				<caller organisation="org.scala-lang.modules" name="scala-async_2.11" conf="default, compile, runtime, master" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.1" callerrev="0.9.2"/>
+				<caller organisation="org.mongodb" name="casbah-query_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.0" callerrev="2.7.1"/>
+				<caller organisation="org.scala-lang" name="scala-reflect" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="2.11.6"/>
+				<caller organisation="org.mongodb" name="casbah-gridfs_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.7" callerrev="3.1.1"/>
+				<caller organisation="io.spray" name="spray-io_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="1.3.3"/>
+				<caller organisation="org.parboiled" name="parboiled-scala_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.5" callerrev="1.1.7"/>
+				<caller organisation="scala-fun" name="scala-fun_2.11" conf="compile" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.8" callerrev="1.0"/>
+				<caller organisation="org.scalaj" name="scalaj-http_2.11" conf="default, compile, runtime, master" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.7" callerrev="2.3.0"/>
+				<caller organisation="org.json4s" name="json4s-ext_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.7" callerrev="3.3.0.RC6"/>
+				<caller organisation="com.novus" name="salat-util_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.2" callerrev="1.9.9"/>
+				<caller organisation="org.mongodb" name="casbah-commons_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.7" callerrev="3.1.1"/>
+				<caller organisation="org.json4s" name="json4s-ast_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.7" callerrev="3.3.0.RC6"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5744974" time="0" location="/Users/zhouzhiqiang/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.11.6" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="-1">
+				<evicted-by rev="2.11.8"/>
+				<caller organisation="org.mongodb" name="casbah-core_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.0" callerrev="2.7.1"/>
+				<caller organisation="com.novus" name="salat-core_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.2" callerrev="1.9.9"/>
+				<caller organisation="org.scala-lang.modules" name="scala-xml_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.7" callerrev="1.0.5"/>
+				<caller organisation="org.json4s" name="json4s-native_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.7" callerrev="3.3.0.RC6"/>
+				<caller organisation="org.mongodb" name="casbah-commons_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.0" callerrev="2.7.1"/>
+				<caller organisation="io.spray" name="spray-httpx_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="1.3.3"/>
+				<caller organisation="org.json4s" name="json4s-scalap_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.7" callerrev="3.3.0.RC6"/>
+				<caller organisation="io.spray" name="spray-can_2.11" conf="default, compile, runtime, master" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="1.3.3"/>
+				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="2.11.6"/>
+				<caller organisation="io.spray" name="spray-util_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="1.3.3"/>
+				<caller organisation="com.typesafe.akka" name="akka-slf4j_2.11" conf="default, compile, runtime, master" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.5" callerrev="2.3.9"/>
+				<caller organisation="com.appadhoc" name="adhoc-common_2.11" conf="default, compile, runtime, master" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="1.0.1"/>
+				<caller organisation="com.typesafe.akka" name="akka-actor_2.11" conf="default, compile, runtime, master" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.5" callerrev="2.3.9"/>
+				<caller organisation="org.mongodb" name="casbah_2.11" conf="default, compile, runtime, master" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.7" callerrev="3.1.1"/>
+				<caller organisation="org.mongodb" name="casbah-core_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.7" callerrev="3.1.1"/>
+				<caller organisation="com.appadhoc" name="adhoc-auth_2.11" conf="compile" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="1.0"/>
+				<caller organisation="org.json4s" name="json4s-core_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.7" callerrev="3.3.0.RC6"/>
+				<caller organisation="org.mongodb" name="casbah-query_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.7" callerrev="3.1.1"/>
+				<caller organisation="com.chuusai" name="shapeless_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.0-M3" callerrev="1.2.4"/>
+				<caller organisation="org.scala-lang.modules" name="scala-parser-combinators_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.2" callerrev="1.0.3"/>
+				<caller organisation="io.spray" name="spray-http_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="1.3.3"/>
+				<caller organisation="com.novus" name="salat_2.11" conf="default, compile, runtime, master" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.2" callerrev="1.9.9"/>
+				<caller organisation="org.scala-lang.modules" name="scala-pickling_2.11" conf="default, compile, runtime, master" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.4" callerrev="0.10.0"/>
+				<caller organisation="io.spray" name="spray-routing_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="1.3.3"/>
+				<caller organisation="org.scala-lang.modules" name="scala-async_2.11" conf="default, compile, runtime, master" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.1" callerrev="0.9.2"/>
+				<caller organisation="org.mongodb" name="casbah-query_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.0" callerrev="2.7.1"/>
+				<caller organisation="org.scala-lang" name="scala-reflect" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="2.11.6"/>
+				<caller organisation="org.mongodb" name="casbah-gridfs_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.7" callerrev="3.1.1"/>
+				<caller organisation="io.spray" name="spray-io_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="1.3.3"/>
+				<caller organisation="org.parboiled" name="parboiled-scala_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.5" callerrev="1.1.7"/>
+				<caller organisation="scala-fun" name="scala-fun_2.11" conf="compile" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.8" callerrev="1.0"/>
+				<caller organisation="org.scalaj" name="scalaj-http_2.11" conf="default, compile, runtime, master" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.7" callerrev="2.3.0"/>
+				<caller organisation="org.json4s" name="json4s-ext_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.7" callerrev="3.3.0.RC6"/>
+				<caller organisation="com.novus" name="salat-util_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.2" callerrev="1.9.9"/>
+				<caller organisation="org.mongodb" name="casbah-commons_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.7" callerrev="3.1.1"/>
+				<caller organisation="org.json4s" name="json4s-ast_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.7" callerrev="3.3.0.RC6"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="2.11.7" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master, default, default(compile)" position="-1">
+				<evicted-by rev="2.11.8"/>
+				<caller organisation="com.github.nscala-time" name="nscala-time_2.11" conf="default, compile, runtime, master" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="2.4.0"/>
+				<caller organisation="scala-fun" name="scala-fun_2.11" conf="compile" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.8" callerrev="1.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>
