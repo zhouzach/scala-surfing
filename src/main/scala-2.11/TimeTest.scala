@@ -1,9 +1,5 @@
-import java.net.URLEncoder
-
-import org.joda.time.{DateTime, DateTimeZone}
 import com.github.nscala_time.time.Imports._
-
-import scala.collection.mutable
+import org.joda.time.{DateTime, DateTimeZone}
 
 
 object TimeTest extends  App{

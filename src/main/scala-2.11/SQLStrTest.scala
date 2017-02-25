@@ -89,7 +89,7 @@ object SQLStrTest extends App {
   val tnow = new DateTime()
   val sql1 = dailySqlByApps(tnow, apps)
   val sql2 = dailySqlByApps(tnow, payApps)
-    println (sql1)
+//    println (sql1)
   //  println(sql2)
 
 }
