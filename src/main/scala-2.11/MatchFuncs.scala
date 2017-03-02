@@ -1,5 +1,5 @@
 
-object MatchTest extends App {
+object MatchFuncs extends App {
   var x: Any = Seq(1,2)
   x match {
     case s: String =>

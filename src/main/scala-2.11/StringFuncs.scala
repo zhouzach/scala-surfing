@@ -1,6 +1,9 @@
 
 
-object StringTest extends App {
+object StringFuncs extends App {
+  def month = 3
+  val dbMonth = s"db_$month"
+  println(s"dbMonth: $dbMonth")
 
   val db = "mongo"
   val dbStr = s"abc_$db"

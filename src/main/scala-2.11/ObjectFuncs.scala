@@ -1,5 +1,5 @@
 
-object ObjectTest extends App{
+object ObjectFuncs extends App{
 
   case class People(name: String, age: Option[Int])
   case class Num(id: String, deleted: Option[String])

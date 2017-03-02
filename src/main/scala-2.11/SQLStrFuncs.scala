@@ -2,7 +2,7 @@ import java.net.URLEncoder
 
 import org.joda.time.{DateTime, DateTimeZone}
 
-object SQLStrTest extends App {
+object SQLStrFuncs extends App {
 
   val payApps =
     s"""

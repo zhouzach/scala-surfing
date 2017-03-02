@@ -1,6 +1,8 @@
 import scala.collection.mutable
 
-object CollectionTest extends App{
+object CollectionFuncs extends App{
+
+  val intSeq = (1 to 3).toSeq
 
   val Seq(n, m) = Seq(3,2)
   //  println(s"n,m: $n,$m")
