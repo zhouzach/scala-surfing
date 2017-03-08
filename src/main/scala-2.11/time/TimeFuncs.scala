@@ -10,6 +10,9 @@ object TimeFuncs extends  App{
   val monthInt2 = "2017-11-11T09:49:40.518Z".substring(5, 7).toInt
 //  val intSeq = (monthInt to monthInt2).foreach(println)
 
+  val dayDate = DateTime.now().minusDays(1).withTimeAtStartOfDay()
+  println(s"now: ${DateTime.now}")
+  println(s"dayDate: $dayDate")
   val monthDate = DateTime.now().plusMonths(9).getMonthOfYear
 //  println(s"monthDate: $monthDate")
 
@@ -93,6 +96,6 @@ object TimeFuncs extends  App{
       case e: IllegalArgumentException => Seq(time(DateTime.now()))
     }
   }
-    timeRange("2016-09-26T07:35:30.887Z","2016-12-27T07:35:30.887Z").foreach(println)
+//    timeRange("2016-09-26T07:35:30.887Z","2016-12-27T07:35:30.887Z").foreach(println)
 
 }
