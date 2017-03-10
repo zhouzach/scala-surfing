@@ -1,3 +1,5 @@
+package org.zach
+
 
 object ObjectFuncs extends App{
 

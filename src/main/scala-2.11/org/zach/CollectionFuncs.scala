@@ -1,3 +1,5 @@
+package org.zach
+
 import scala.collection.mutable
 
 object CollectionFuncs extends App{

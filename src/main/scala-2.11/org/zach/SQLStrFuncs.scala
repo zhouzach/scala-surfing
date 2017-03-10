@@ -1,3 +1,5 @@
+package org.zach
+
 import java.net.URLEncoder
 
 import org.joda.time.{DateTime, DateTimeZone}

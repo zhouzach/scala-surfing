@@ -1,4 +1,4 @@
-package time
+package org.zach.time
 
 import com.github.nscala_time.time.Imports._
 import org.joda.time.{DateTime, DateTimeZone}
