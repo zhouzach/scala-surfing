@@ -1,4 +1,4 @@
-package org.zach
+package org.zach.functions.string
 
 import java.net.URLEncoder
 

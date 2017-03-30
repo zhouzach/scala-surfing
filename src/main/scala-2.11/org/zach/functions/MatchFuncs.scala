@@ -1,6 +1,6 @@
-package org.zach
+package org.zach.functions
 
-import org.zach.model.UserActiveRecord
+import org.zach.functions.model.UserActiveRecord
 
 
 object MatchFuncs extends App {
@@ -33,7 +33,7 @@ object MatchFuncs extends App {
       println(s"match the Seq that is Empty or have more than a element")
       a.foreach(println)
     case _ =>
-      println(s"a: not have a")
+      println(s"other situation")
       None
   }
 

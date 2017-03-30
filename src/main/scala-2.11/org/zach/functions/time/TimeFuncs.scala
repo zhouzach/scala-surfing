@@ -1,4 +1,4 @@
-package org.zach.time
+package org.zach.functions.time
 
 import com.github.nscala_time.time.Imports._
 import org.joda.time.{DateTime, DateTimeZone}
@@ -11,8 +11,8 @@ object TimeFuncs extends  App{
 //  val intSeq = (monthInt to monthInt2).foreach(println)
 
   val dayDate = DateTime.now().minusDays(1).withTimeAtStartOfDay()
-  println(s"now: ${DateTime.now}")
-  println(s"dayDate: $dayDate")
+//  println(s"now: ${DateTime.now}")
+//  println(s"dayDate: $dayDate")
   val monthDate = DateTime.now().plusMonths(9).getMonthOfYear
 //  println(s"monthDate: $monthDate")
 
@@ -25,9 +25,13 @@ object TimeFuncs extends  App{
 
   val nowDate = new DateTime()
   val formattedDate =nowDate.toString("MM").toInt
+  val nowWeekDay = nowDate.getDayOfWeek
+  val nowDay = nowDate.getDayOfMonth
   val nowMonth =nowDate.getMonthOfYear
   val nowYear =nowDate.getYear
   val yearMonth = s"${nowDate.getYear}-${nowDate.getMonthOfYear}"
+//  println(s"nowDay: $nowDay")
+//  println(s"nowWeekDay: $nowWeekDay")
 //  println(s"nowDate: $nowDate")
 //  println(s"formatted date: $formattedDate")
 //  println(s"nowMonth: $nowMonth")
@@ -35,7 +39,11 @@ object TimeFuncs extends  App{
 //  println(s"yearMonth: $yearMonth")
 
   val now23h =  DateTime.now().withHourOfDay(23).withMinuteOfHour(59).withSecondOfMinute(59).withMillisOfSecond(999)
-  val utc23h =  DateTime.now().withHourOfDay(23).withMinuteOfHour(59).withSecondOfMinute(59).withMillisOfSecond(999).withZone(DateTimeZone.UTC)
+  val day7utc23h =  DateTime.now().withDayOfMonth(1).plusDays(6).withHourOfDay(23).withMinuteOfHour(59).withSecondOfMinute(59).withMillisOfSecond(999)
+    .withZone(DateTimeZone.UTC).getMillis / 1000
+  val day7now0h = DateTime.now.withDayOfMonth(1).plusDays(6).withTimeAtStartOfDay().withZone(DateTimeZone.UTC).getMillis / 1000
+//  println(s"now0h: $day7now0h")
+//  println(s"now23h: $day7utc23h")
 //  val t2=  DateTime.now().withHourOfDay(0).withMinuteOfHour(0).withSecondOfMinute(0).withMillisOfSecond(0).withZone(DateTimeZone.forOffsetHours(9))
 //  val t3=  DateTime.now().withHourOfDay(0).withMinuteOfHour(0).withSecondOfMinute(0).withMillisOfSecond(0)
 

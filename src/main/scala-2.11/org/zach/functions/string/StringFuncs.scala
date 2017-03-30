@@ -1,6 +1,4 @@
-package org.zach
-
-
+package org.zach.functions.string
 
 object StringFuncs extends App {
   def month = 3

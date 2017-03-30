@@ -1,4 +1,4 @@
-package org.zach
+package org.zach.functions.collection
 
 import scala.collection.mutable
 

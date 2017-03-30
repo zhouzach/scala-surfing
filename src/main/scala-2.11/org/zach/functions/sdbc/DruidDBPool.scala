@@ -1,4 +1,4 @@
-package org.zach.sdbc
+package org.zach.functions.sdbc
 
 import com.alibaba.druid.pool.DruidDataSource
 
