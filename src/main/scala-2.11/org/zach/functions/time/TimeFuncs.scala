@@ -24,13 +24,20 @@ object TimeFuncs extends  App{
 //  println(strForDate)
 
   val nowDate = new DateTime()
+  val nowDateStr = nowDate.toString
+//  val from_dt = DateTime.now().minusDays(1).toString().toLocalDate
+  val from_dt = DateTime.now().minusDays(1).withZone(DateTimeZone.UTC).toString
+  val fromDate = new DateTime(from_dt).toString("yyyy-MM-dd")
   val formattedDate =nowDate.toString("MM").toInt
   val nowWeekDay = nowDate.getDayOfWeek
   val nowDay = nowDate.getDayOfMonth
   val nowMonth =nowDate.getMonthOfYear
   val nowYear =nowDate.getYear
   val yearMonth = s"${nowDate.getYear}-${nowDate.getMonthOfYear}"
-//  println(s"nowDay: $nowDay")
+  println(s"from_dt: $from_dt")
+  println(s"fromDate: $fromDate")
+//  println(s"nowDateStr: $nowDateStr")
+//  printlns(s"nowDay: $nowDay")
 //  println(s"nowWeekDay: $nowWeekDay")
 //  println(s"nowDate: $nowDate")
 //  println(s"formatted date: $formattedDate")
@@ -71,39 +78,5 @@ object TimeFuncs extends  App{
 //  println(s"month: $month")
 //  println(s"lastmonth: $lastMonth")
 //  println(s"llastmonth: $llastMonth")
-
-  def time2(t: DateTime) = t.withZone(DateTimeZone.forOffsetHours(8))
-      .dayOfMonth().withMinimumValue().hour(0).minute(0).second(0).millis(0).withZone(DateTimeZone.UTC).toString
-
-  def time(t: DateTime) = t.withZone(DateTimeZone.forOffsetHours(8))
-//      .day(1).
-    .hour(0).minute(0).second(0).millis(0).withZone(DateTimeZone.UTC).toString
-
-  def timeRange(from: String, to: String): Seq[String] = {
-    val maxRange = 2000
-    try {
-      val startTime = DateTime.parse(from).minute(0).second(0).millis(0)
-      val endTime = DateTime.parse(to).minute(0).second(0).millis(0)
-      val millis = (startTime to endTime).millis
-      val hours = ((millis + 1) / 3600000).toInt
-      val days = ((millis + 1) / 3600000 / 24).toInt
-//      println(s"days: $days")
-      (0 to hours)
-        .map{ h =>
-//          println(s"h: $h")
-//          println(s"h.hour: ${h.hour}")
-          val t = time2(startTime + h.hour)
-//          val st = startTime + h.hour
-//          println(s"t: $t")
-//          println(s"st: $st")
-          t
-        }
-        .distinct
-        .take(maxRange)
-    } catch {
-      case e: IllegalArgumentException => Seq(time(DateTime.now()))
-    }
-  }
-//    timeRange("2016-09-26T07:35:30.887Z","2016-12-27T07:35:30.887Z").foreach(println)
 
 }

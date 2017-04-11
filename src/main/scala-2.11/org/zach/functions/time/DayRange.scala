@@ -23,7 +23,7 @@ object DayRange extends App {
           /**
             * accumulate startTime by hour,
             * and get many hour DateTime in the Same day,
-            * but after org.zach.time() function, get many same days
+            * but after time() function, get many same days
             */
           val t = time(startTime + h.hour)
           //          println(s"t: $t")
