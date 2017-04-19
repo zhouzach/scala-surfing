@@ -1,16 +1,16 @@
-package org.zach.functions.http
-
+package org.zach.web.http.client
 
 import com.appadhoc.auth.model.User
-
-import scalaj.http._
 import com.typesafe.config.ConfigFactory
 import org.json4s.DefaultFormats
 import org.json4s.native.JsonMethods._
 
+import scalaj.http._
+
 case class Users(users: Seq[User])
 
-object HttpFunc extends App{
+object HttpClient extends App{
+
 
   val config = ConfigFactory.load()
   val authKey = config.getString("auth.key")
@@ -22,16 +22,16 @@ object HttpFunc extends App{
   val bodyLength = response.body.length
   println(s"body length: $bodyLength")
   println(s"response code: ${response.code}")
-  println(s"headers: ${response.headers}")
-  println(s"cookies: ${response.cookies}")
+  println("headers: ")
+  response.headers.foreach(println)
+//  println(s"cookies: ${response.cookies}")
 
   implicit val formats = DefaultFormats
   //extract do not support Seq type
-//  val users = parse(response.body).extract[Seq[User]]
+  //  val users = parse(response.body).extract[Seq[User]]
   val users = parse(response.body).extract[Users].users
   val userSize = users.size
   println(s"users size: $userSize")
-
 
 
 }
