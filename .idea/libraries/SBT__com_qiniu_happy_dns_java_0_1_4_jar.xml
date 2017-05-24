@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="SBT: com.qiniu:happy-dns-java:0.1.4:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.qiniu/happy-dns-java/jars/happy-dns-java-0.1.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.qiniu/happy-dns-java/srcs/happy-dns-java-0.1.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

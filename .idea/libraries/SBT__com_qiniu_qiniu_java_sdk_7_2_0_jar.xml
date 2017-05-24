@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="SBT: com.qiniu:qiniu-java-sdk:7.2.0:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.qiniu/qiniu-java-sdk/jars/qiniu-java-sdk-7.2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.qiniu/qiniu-java-sdk/srcs/qiniu-java-sdk-7.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
