@@ -1,9 +1,9 @@
 package org.zach.web.http.client
 
-import com.appadhoc.auth.model.User
 import com.typesafe.config.ConfigFactory
 import org.json4s.DefaultFormats
 import org.json4s.native.JsonMethods._
+import org.zach.functions.model.User
 
 import scalaj.http._
 
@@ -24,11 +24,11 @@ object HttpClient extends App{
   println(s"response code: ${response.code}")
   println("headers: ")
   response.headers.foreach(println)
-//  println(s"cookies: ${response.cookies}")
+  println(s"cookies: ${response.cookies}")
 
   implicit val formats = DefaultFormats
   //extract do not support Seq type
-  //  val users = parse(response.body).extract[Seq[User]]
+//    val users = parse(response.body).extract[Seq[User]]
   val users = parse(response.body).extract[Users].users
   val userSize = users.size
   println(s"users size: $userSize")
