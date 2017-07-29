@@ -23,4 +23,11 @@ object ObjectFuncs extends App{
 
   val groupedPeo = removedPeo.groupBy(_.name).map(m => m._2.maxBy(_.age))
 
+  val intOption = Some(3)
+  intOption.map(n => n+1)
+  val m = intOption.flatMap(n => None)
+  m.foreach(n => println(n))
+  m.map(n => println(n))
+
+
 }

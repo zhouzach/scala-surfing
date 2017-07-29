@@ -16,7 +16,9 @@ libraryDependencies ++= {
     "io.spray"            %%  "spray-routing" % "1.3.3",
     "io.spray"            %%  "spray-testkit" % "1.3.3" % "test",
     "org.scalatest"       %%  "scalatest"     % "2.2.1" % "test",
-    "com.appadhoc" %% "adhoc-auth" % "1.0"
+    "com.appadhoc" %% "adhoc-auth" % "1.0",
+    "com.typesafe.akka" % "akka-actor_2.11" % "2.5.3"
+
   )
 }
 
