@@ -4,6 +4,9 @@ version := "1.0"
 
 scalaVersion := "2.11.8"
 
+
+//resolvers += "Typesafe Repository" at "http://repo.typesafe.com/typesafe/releases/"
+
 libraryDependencies ++= {
   Seq(
 //    "com.github.nscala-org.zach.time" %% "nscala-org.zach.time" % "2.4.0",
@@ -17,10 +20,14 @@ libraryDependencies ++= {
     "io.spray"            %%  "spray-testkit" % "1.3.3" % "test",
     "org.scalatest"       %%  "scalatest"     % "2.2.1" % "test",
     "com.appadhoc" %% "adhoc-auth" % "1.0",
+
+    //ClassNotFoundException: akka.event.slf4j.Slf4jLoggingFilter
+    "com.typesafe.akka" % "akka-slf4j_2.11" % "2.5.3",
     "com.typesafe.akka" % "akka-actor_2.11" % "2.5.3"
+
 
   )
 }
 
-mainClass in Compile := Some("org.zach.web.spray.main.Main")
+mainClass in Compile := Some("org.zach.concurrency.HelloActor")
     
