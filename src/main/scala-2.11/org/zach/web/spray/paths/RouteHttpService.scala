@@ -4,9 +4,9 @@ package org.zach.web.spray.paths
 
 import spray.routing.HttpService
 
-trait RoutePath extends HttpService {
+trait RouteHttpService extends HttpService {
 
-  val route = path("index") {
+  val requestContextRoute = path("index") {
     get {
       complete("hi Spray!")
     }

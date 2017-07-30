@@ -6,11 +6,11 @@ import org.scalatest.{FunSpec, Matchers}
 import spray.testkit.ScalatestRouteTest
 
 
-class RoutePathTest extends FunSpec with Matchers with ScalatestRouteTest with RoutePath {
+class RouteHttpServiceTest extends FunSpec with Matchers with ScalatestRouteTest with RouteHttpService {
 
   def actorRefFactory: ActorRefFactory = system
 
-  Get("/index") ~> route ~> check {
+  Get("/index") ~> requestContextRoute ~> check {
 
     responseAs[String] should equal("hi Spray!")
 
