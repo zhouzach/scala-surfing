@@ -2,3 +2,7 @@ target/
 project/target
 project/project/target
 .idea
+
+### macOS template
+*.DS_Store
+*.pdf

@@ -9,7 +9,9 @@ scalaVersion := "2.11.8"
 
 libraryDependencies ++= {
   Seq(
-//    "com.github.nscala-org.zach.time" %% "nscala-org.zach.time" % "2.4.0",
+    "io.github.cloudify" %% "spdf" % "1.4.0",
+    "joda-time" % "joda-time" % "2.9.9",
+    "com.github.nscala-time" %% "nscala-time" % "2.16.0",
     "org.apache.hive" % "hive-jdbc" % "1.1.0",
     "org.apache.hadoop" % "hadoop-common" % "2.7.1",
     "com.alibaba" % "druid" % "1.0.28",
