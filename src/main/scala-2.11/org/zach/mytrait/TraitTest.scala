@@ -53,3 +53,8 @@ class BasicIntQueue extends IntQueue {
 trait Doubling extends IntQueue {
   abstract override def put(x: Int) = { super.put(2 * x) }
 }
+class Queue[+T] (private val leading: List[T],
+                 private val trailing: List[T] ) {
+  def enqueue[U >: T](x: U) =
+    new Queue[U](leading, x :: trailing) // ...
+}
