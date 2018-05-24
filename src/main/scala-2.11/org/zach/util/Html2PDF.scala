@@ -15,6 +15,8 @@ object Html2PDF extends App {
     marginBottom := "1in"
     marginLeft := "1in"
     marginRight := "1in"
+//    username := "admin"
+//    password := "admin"
   })
 
   val page = <html>
