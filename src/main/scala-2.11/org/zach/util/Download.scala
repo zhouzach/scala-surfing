@@ -13,7 +13,8 @@ object Download {
     // While that also works, I don't like depending on wget or curl
     // when you can do everything you need from within the Scala/Java environment.
     import sys.process._
-    "curl http://baidu.com" !!
+//    "curl http://baidu.com" !!
+    "rm -rf ps.pdf" !!
   }
 
   def toFile() = {
@@ -35,4 +36,22 @@ object Download {
 
   }
 
+}
+
+object FileName extends App {
+
+  val s = "ps (1).tar"
+  val n = s.indexOf("(")
+  val m = s.indexOf(")")
+  println(n)
+  println(m)
+  val c = s.charAt(1)
+  println(c)
+
+  val s1 = s.substring(0,n)
+  val s2 = s.substring(n,m+1)
+  val s3 = s.substring(m+1)
+  println(s1)
+  println(s2)
+  println(s3)
 }
