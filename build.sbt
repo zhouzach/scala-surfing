@@ -24,8 +24,12 @@ libraryDependencies ++= Seq(
 
   //ClassNotFoundException: akka.event.slf4j.Slf4jLoggingFilter
   "com.typesafe.akka" % "akka-slf4j_2.11" % "2.5.3",
-  "com.typesafe.akka" % "akka-actor_2.11" % "2.5.3"
+  "com.typesafe.akka" % "akka-actor_2.11" % "2.5.3",
 
+  // https://mvnrepository.com/artifact/com.typesafe.akka/akka-http
+  "com.typesafe.akka" %% "akka-http" % "10.1.3",
+  // https://mvnrepository.com/artifact/com.typesafe.akka/akka-stream
+  "com.typesafe.akka" %% "akka-stream" % "2.5.13"
 
 )
 
