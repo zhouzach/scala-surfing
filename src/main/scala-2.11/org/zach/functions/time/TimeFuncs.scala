@@ -23,20 +23,23 @@ object TimeFuncs extends  App{
   val strForDate = new DateTime("2017-01-11T09:49:40.518Z").toString("yyyy-M")
 //  println(strForDate)
 
-  val nowDate = new DateTime()
+  val nowDate = new DateTime("2018-08-10")
   val nowDateStr = nowDate.toString
+  val nowDateLong = nowDate.getMillis
 //  val from_dt = DateTime.now().minusDays(1).toString().toLocalDate
   val from_dt = DateTime.now().minusDays(1).withZone(DateTimeZone.UTC).toString
-  val fromDate = new DateTime(from_dt).toString("yyyy-MM-dd")
+  // 2018-06-06 00:00:00.0
+  val fromDate = new DateTime(from_dt).toString("yyyy-MM-dd HH:mm:ss.sss")
   val formattedDate =nowDate.toString("MM").toInt
   val nowWeekDay = nowDate.getDayOfWeek
   val nowDay = nowDate.getDayOfMonth
   val nowMonth =nowDate.getMonthOfYear
   val nowYear =nowDate.getYear
   val yearMonth = s"${nowDate.getYear}-${nowDate.getMonthOfYear}"
-  println(s"from_dt: $from_dt")
-  println(s"fromDate: $fromDate")
-//  println(s"nowDateStr: $nowDateStr")
+//  println(s"from_dt: $from_dt")
+//  println(s"fromDate: $fromDate")
+  println(s"nowDateStr: $fromDate")
+//  println(s"nowDateStr: ${nowDateLong}")
 //  printlns(s"nowDay: $nowDay")
 //  println(s"nowWeekDay: $nowWeekDay")
 //  println(s"nowDate: $nowDate")
