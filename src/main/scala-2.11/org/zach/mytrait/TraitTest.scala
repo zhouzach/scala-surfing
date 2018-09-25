@@ -3,11 +3,24 @@ package org.zach.mytrait
 object TraitTest extends App{
 
   val rect = new Rectangle(new Point(1, 1), new Point(10, 10))
+  class A extends AnyRef
+  val n=new A().##
+  val r = rect.##
+  val h = rect.hashCode()
+  rect.==()
+  println(s"n: $n")
+  println(s"r: $r")
+  println(s"h: $h")
   println(rect.left)
   class MyQueue extends BasicIntQueue with Doubling
   val queue = new MyQueue
   queue.put(10)
   println(queue.get())
+
+  def m(r: Rectangular)={
+    import r._
+    println(left)
+  }
 
 }
 class Point(val x: Int, val y: Int)
@@ -39,4 +52,9 @@ class BasicIntQueue extends IntQueue {
 }
 trait Doubling extends IntQueue {
   abstract override def put(x: Int) = { super.put(2 * x) }
+}
+class Queue[+T] (private val leading: List[T],
+                 private val trailing: List[T] ) {
+  def enqueue[U >: T](x: U) =
+    new Queue[U](leading, x :: trailing) // ...
 }

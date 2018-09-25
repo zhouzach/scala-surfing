@@ -5,6 +5,10 @@ project/project/target
 *.MF
 classes
 
+### user files
+*.pdf
+*.html
+mave
+
 ### macOS template
 *.DS_Store
-*.pdf

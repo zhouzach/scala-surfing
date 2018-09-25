@@ -82,4 +82,13 @@ object TimeFuncs extends  App{
 //  println(s"lastmonth: $lastMonth")
 //  println(s"llastmonth: $llastMonth")
 
+  val hour23 = new DateTime("2018-09-20").withTimeAtStartOfDay()
+    .withZone(DateTimeZone.UTC).withZone(DateTimeZone.forOffsetHours(8))
+    .toString("yyyy-MM-dd HH:mm:ss.sss")
+  println(s"hour23: $hour23")
+  val pDate = new DateTime("2018-09-20").minusDays(1).withTimeAtStartOfDay()
+    .withZone(DateTimeZone.UTC).withZone(DateTimeZone.forOffsetHours(8))
+    .toString("yyyy-MM-dd")
+  println(s"pDate: $pDate")
+
 }
