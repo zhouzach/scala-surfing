@@ -29,7 +29,14 @@ libraryDependencies ++= Seq(
   // https://mvnrepository.com/artifact/com.typesafe.akka/akka-http
   "com.typesafe.akka" %% "akka-http" % "10.1.3",
   // https://mvnrepository.com/artifact/com.typesafe.akka/akka-stream
-  "com.typesafe.akka" %% "akka-stream" % "2.5.13"
+  "com.typesafe.akka" %% "akka-stream" % "2.5.13",
+
+  // https://mvnrepository.com/artifact/org.mule.mchange/c3p0
+  "com.mchange" % "c3p0" % "0.9.5.2",
+  "commons-dbutils" % "commons-dbutils" % "1.6",
+  "mysql" % "mysql-connector-java" % "5.1.44"
+
+
 
 )
 
