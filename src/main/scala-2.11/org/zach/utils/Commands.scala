@@ -1,4 +1,4 @@
-package org.zach.util
+package org.zach.utils
 
 object Commands {
 

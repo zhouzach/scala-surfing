@@ -1,4 +1,4 @@
-package org.zach.util
+package org.zach.utils
 
 import java.io._
 import java.nio.file.{Files, Path, Paths}
