@@ -31,6 +31,10 @@ libraryDependencies ++= Seq(
   // https://mvnrepository.com/artifact/com.typesafe.akka/akka-stream
   "com.typesafe.akka" %% "akka-stream" % "2.5.13",
 
+  "org.apache.poi" % "poi" % "4.0.0",
+  "org.apache.poi" % "poi-ooxml" % "4.0.0",
+  "org.jfree" % "jfreechart" % "1.5.0",
+
   // https://mvnrepository.com/artifact/org.mule.mchange/c3p0
   "com.mchange" % "c3p0" % "0.9.5.2",
   "commons-dbutils" % "commons-dbutils" % "1.6",

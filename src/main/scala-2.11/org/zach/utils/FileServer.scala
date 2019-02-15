@@ -19,28 +19,6 @@ object Download {
 
   val logger = LoggerFactory.getLogger(this.getClass)
 
-  def urlToSource() = {
-    scala.io.Source.fromURL("http://baidu.com").mkString
-  }
-
-  /**
-    * Another approach is to reach out to the shell and use the wget or curl command, like this:
-    */
-  def byCurl() = {
-    // While that also works, I don't like depending on wget or curl
-    // when you can do everything you need from within the Scala/Java environment.
-    import sys.process._
-    "curl http://baidu.com" !!
-  }
-
-  def toFile() = {
-    import java.io.File
-    import java.net.URL
-
-    import sys.process._
-    new URL("http://baidu.com") #> new File("Output.html") !!
-  }
-
   def exists(fileName: String) = {
     new File(fileName).exists()
   }
@@ -85,25 +63,29 @@ object Download {
     """.stripMargin)
     .withFallback(ConfigFactory.load())
 
-  def fileServerStarter: Unit = {
+  def fileServerStarter(host: String, port: Int, baseDir: String): Unit = {
 
-    implicit val system = ActorSystem("itoa", config)
+    implicit val system = ActorSystem("File-Server", config)
     implicit val fm = ActorMaterializer()
 
-    byHttp("localhost", 9990, "/Users/Zach/scala-functions/")
+    byHttp(host, port, baseDir)
   }
 
   def main(args: Array[String]): Unit = {
 
     val baseDir = "/Users/Zach/scala-functions/"
-    val file = baseDir + "/mave/test.txt"
-    val path = Paths.get(file)
 
-    val hasFile = exists(file)
-    if (hasFile) println(s"$path exists.") else println(s"$path not exists!")
+//    val file = baseDir + "build.sbt"
+//    val path = Paths.get(file)
+//
+//    val hasFile = exists(file)
+//    if (hasFile) println(s"$path exists.") else println(s"$path not exists!")
 
-    println(s"File Server baseDir: $baseDir")
-    fileServerStarter
+    val host = "localhost"
+    val port = 9990
+    fileServerStarter(host, port, baseDir)
+    println(s"host: $host, port: $port, dir: $baseDir")
+    println(s"File Server is running...")
   }
 
 }

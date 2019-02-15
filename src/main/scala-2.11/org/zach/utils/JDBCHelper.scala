@@ -1,7 +1,5 @@
 package org.zach.utils
 
-import org.apache.commons.dbutils.QueryRunner
-
 object JDBCHelper extends App {
 //  val register = "unknown"
 //  val id =23
