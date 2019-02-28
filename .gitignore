@@ -12,3 +12,5 @@ mave
 
 ### macOS template
 *.DS_Store
+
+src/main/resources
