@@ -1,4 +1,4 @@
-package org.zach.web.spray.paths
+package org.rabbit.web.spray.paths
 
 
 import akka.actor.ActorRefFactory

@@ -1,4 +1,4 @@
-name := "scala-fun"
+name := "scala-surfing"
 
 version := "1.0"
 
