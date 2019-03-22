@@ -44,6 +44,7 @@ object MutableMapFunc extends App {
   val m5 = map ++: Map("e" -> 5)
   map ++= Map("f" -> 6)
   map += ("g" -> 7)
+  map += ("h" -> 8)
 
   map -= ("g","f")
 
