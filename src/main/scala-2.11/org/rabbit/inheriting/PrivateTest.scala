@@ -1,8 +1,6 @@
 package org.rabbit.inheriting
 
-/**
-  * Created by zach on 2017/12/3.
-  */
+
 object PrivateTest {
 
   val s=Seq()

@@ -2,9 +2,7 @@ package org.rabbit.concurrency
 
 import akka.actor.{Actor, ActorSystem, PoisonPill, Props}
 
-/**
-  * Created by zach on 2017/7/29.
-  */
+
 class HelloActor(name: String) extends Actor {
 
   override def receive = {

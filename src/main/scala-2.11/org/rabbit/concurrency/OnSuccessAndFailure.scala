@@ -1,8 +1,6 @@
 package org.rabbit.concurrency
 
-/**
-  * Created by zach on 2017/7/29.
-  */
+
 import scala.concurrent.{Future}
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.util.Random

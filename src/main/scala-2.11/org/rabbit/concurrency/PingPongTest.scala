@@ -2,9 +2,7 @@ package org.rabbit.concurrency
 
 import akka.actor.{Actor, ActorRef, ActorSystem, Props}
 
-/**
-  * Created by zach on 2017/7/29.
-  */
+
 
 case object StartMessage
 case object StopMessage

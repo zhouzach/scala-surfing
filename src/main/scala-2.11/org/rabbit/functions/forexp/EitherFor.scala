@@ -1,7 +1,5 @@
 package org.rabbit.functions.forexp
-/**
-  * Created by zach on 2017/10/6.
-  */
+
 object EitherFor extends App{
   def positive(i: Int): Either[String,Int] =
     if (i > 0) Right(i) else Left(s"nonpositive number $i")

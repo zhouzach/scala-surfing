@@ -1,8 +1,6 @@
 package org.rabbit.functions.forexp
 
-/**
-  * Created by zach on 2017/10/6.
-  */
+
 object OptionFor extends App {
   def positive(i: Int): Option[Int] =
     if (i > 0) Some(i) else None
