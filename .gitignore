@@ -1,4 +1,8 @@
+
+src/main/resources
+
 target/
+
 project/target
 project/project/target
 .idea
@@ -13,4 +17,3 @@ mave
 ### macOS template
 *.DS_Store
 
-src/main/resources
